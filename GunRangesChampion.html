@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>אלוף המטווחים</title>
+    <meta name="description" content="aluf hamitvahim" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Dana Rosenblut, Dorin Levi, Eden Gabbay" />
+    <link rel="icon" href="styles/PICS/sica(1).png"/>
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html" style="text-decoration:none">
+                <img src="styles/PICS/sica(1).png" id="logo" /> <!--הלוגו של המשחק שלכם-->
+                <p>אלוף המטווחים</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about" style="color: #4586CE; text-decoration: underline;">אודות</a></li>
+                    <li><a class="howToPlay" style="color: #4586CE; text-decoration: underline;">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout" id="exit" style=" margin-right:150px; margin-top: 186px; z-index: 5; position: fixed; ">X</a>
+            <p><img src="styles/PICS/V4 -About without opacity.png" class="popUp about" style="width: 896px; height: 334px; " /></p>
+            <!--<p><img src="styles/PICS/opacity.png" style="width: 158.7%; height: 97%; " id="opacity" /></p>-->
+            <a href="https://www.hit.ac.il/telem/overview" style="color: #4586CE" id="aboutLink">הפקולטה לטכנולוגיות למידה</a>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay" id="exit" style="margin-right: 112px; z-index: 5; position: fixed; ">X</a>
+            <p> <img src="styles/PICS/V4 -how play without opacity.png" class="popUp howToPlay" style="width: 786px; height: 450px;" /></p>
+            <!--<p><img src="styles/PICS/opacity.png" style="width: 158.7%; height: 97%;" id="opacity" /></p>-->
+
+        </div>
+
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://i.simmer.io/@Danarose105/gunrange-champ" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+            
+
+</html>
